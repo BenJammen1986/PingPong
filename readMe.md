@@ -6,14 +6,13 @@
 
 ## Description/Spec List
 
-_|Behavior|Input|Output|_
-
-| 1. The program does not recognize characters that cannot be parsed, empty values | Input = red | Output = Please enter a number |
-
-| 2. The program can count up to a preset number and stop there. | Input = 3 | Output = 1,2,3 |
-
-
-| 3. 
+|Behavior|Input|Output|
+|--------:|-----|------|
+| 1. The program does not recognize characters that cannot be parsed, empty values | Input = word | Output = Please enter a number |
+| 2. The program can count up to a preset number and stop there. | Input = 2 | Output = 1,2 |
+| 3. The program will change multiples of 3 to "Ping". | Input = 6 | Output = "Ping!"|
+| 4. The program will change multiples of 5 to "Pong". | Input = 10 | Output = "Pong!"|
+| 5. The program will change multiples of 15 to "Ping-Pong!"| Input = 30 | Output = "Ping-Pong!"|
 
 ## Setup/Installation Requirements
 

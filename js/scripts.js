@@ -56,18 +56,18 @@ var numLoop = function(userInput) {
   }
 };
 
-var pingPong = function(userInput) {
+var pingPong = function(index) {
 	if (index % 15 === 0) {
-		console.log("Ping Pong");
+		$("#results").append("<li>" + "Ping-Pong!" + "</li>");
     }
 	else if (index % 3 === 0) {
-		console.log("Ping");
+		$("#results").append("<li>" + "Ping!" + "</li>");
     }
 	else if (index % 5 === 0) {
-		console.log("Pong");
+		$("#results").append("<li>" + "Pong!" + "</li>");
     }
 	else {
-		console.log(index);
+		$("#results").append("<li>" + index + "</li>");
     }
 };
 
@@ -80,6 +80,7 @@ var pingPong = function(userInput) {
 
 $(document).ready(function() {
   $("#numberForm").submit(function(event) {
+      $("ul").empty();
       event.preventDefault();
       var userInput = parseInt($("input#numberInput").val());
       numLoop(userInput);

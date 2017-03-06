@@ -14,26 +14,62 @@
 // Business logic:
 
 
+// var output = [];
+//
+// var numLoop = function(userInput) {
+//   for(index=0; index<userInput;index++) {
+//       return index;
+//   }
+//   console.log();
+// };
+//
 
-var pingPong = function(userInput) {
-	if (userInput % 15 === 0) {
-		return "Ping-Pong";
-    }
-	else if (userInput % 3 === 0) {
-		return "Ping";
-    }
-	else if (userInput % 5 === 0) {
-		return "Pong";
-    }
-	else {
-		return userInput;
-    }
+// var numLoop = function(userInput) {
+//   for(index=0; index<userInput;index++) {
+//   pingPong(index);
+//   console.log(index);
+//   }
+// };
+//
+// var pingPong = function(userInput) {
+// 	if (userInput % 15 === 0) {
+// 		console.log("Ping-Pong");
+//     }
+// 	else if (userInput % 3 === 0) {
+// 		console.log("Ping");
+//     }
+// 	else if (userInput % 5 === 0) {
+// 		console.log("Pong");
+//     }
+// 	else {
+// 		console.log(index);
+//     }
+// };
+//
+
+
+var index;
+
+var numLoop = function(userInput) {
+  for(index=1; index <= userInput; index++) {
+  pingPong(index);
+  }
 };
 
-
-
-
-
+var pingPong = function(userInput) {
+	if (index % 15 === 0) {
+		console.log("Ping Pong");
+    }
+	else if (index % 3 === 0) {
+		console.log("Ping");
+    }
+	else if (index % 5 === 0) {
+		console.log("Pong");
+    }
+	else {
+		console.log(index);
+    }
+};
 
 
 
@@ -46,71 +82,9 @@ $(document).ready(function() {
   $("#numberForm").submit(function(event) {
       event.preventDefault();
       var userInput = parseInt($("input#numberInput").val());
-      var output = pingPong(userInput);
-
-
-
-      // makeIndWordArrays (englishInput);
-      // for (var b=0;b<masterArray.length;b++) {
-      //   makeIndCharacterArray (masterArray[b]);
-      //   translateString (inputArray);
-      //   rejoinCharacterArray (inputArray);
-      // };
-
-      $("#results").append("<li>" + output + "</li>");
+      numLoop(userInput);
+      // $("#results").append("<li>" + output + "</li>");
       $(".results").show();
 
   });
 });
-
-
-
-
-
-// var pingPong = function(userInput) {
-// 	if (userInput % 15 === 0) {
-// 		return "Ping-Pong";
-//     }
-// 	else if (userInput % 3 === 0) {
-// 		return "Ping";
-//     }
-// 	else if (userInput % 5 === 0) {
-// 		return "Pong";
-//     }
-// 	else {
-// 		return userInput;
-//     }
-// };
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// // User interface logic:
-//
-// $(document).ready(function() {
-//   $("#numberForm").submit(function(event) {
-//       event.preventDefault();
-//       var userInput = parseInt($("input#numberInput").val());
-//       var output = pingPong(userInput);
-//
-//
-//
-//       // makeIndWordArrays (englishInput);
-//       // for (var b=0;b<masterArray.length;b++) {
-//       //   makeIndCharacterArray (masterArray[b]);
-//       //   translateString (inputArray);
-//       //   rejoinCharacterArray (inputArray);
-//       // };
-//
-//       $("#results").append("<li>" + output + "</li>");
-//       $(".results").show();
-//
-//   });
-// });

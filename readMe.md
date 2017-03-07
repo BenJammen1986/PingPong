@@ -17,8 +17,10 @@
 
 If you would like to play with this code you are welcome to:
 1. Click the "clone/download" button on Github.
+
 2. Access with a simple code editor like Atom.
     download: https://atom.io/
+
 3. You should be able to access the folder and bring up the index.html file in your browser of choice.
 
 Have fun!

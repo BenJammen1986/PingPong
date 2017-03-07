@@ -12,44 +12,34 @@
 // - The loop will end when it hits the number inputted by the user.
 
 // Business logic:
-var index;
 
-var numLoop = function(userInput) {
-  for(index=1; index <= userInput; index++) {
-  pingPong(index);
-  }
-};
+var allNumbers = [];
 
-var pingPong = function(index) {
+var pingPong = function(userInput) {
+for (var index=1; index <= userInput; index++){
 	if (index % 15 === 0) {
-		$("#results").append("<li>" + "Ping-Pong!" + "</li>");
+		allNumbers.push("Ping-Pong!");
+    } else if (index % 3 === 0) {
+		allNumbers.push("Ping!");
+    } else if (index % 5 === 0) {
+		allNumbers.push("Pong!");
+		} else { allNumbers.push(index);
     }
-	else if (index % 3 === 0) {
-		$("#results").append("<li>" + "Ping!" + "</li>");
-    }
-	else if (index % 5 === 0) {
-		$("#results").append("<li>" + "Pong!" + "</li>");
-    }
-	else {
-		$("#results").append("<li>" + index + "</li>");
-    }
-};
-
-
-
-
-
+	}
+}
 
 // User interface logic:
-
 $(document).ready(function() {
   $("#numberForm").submit(function(event) {
-      $("ul").empty();
-      event.preventDefault();
-      var userInput = parseInt($("input#numberInput").val());
-      numLoop(userInput);
-      // $("#results").append("<li>" + output + "</li>");
-      $(".results").show();
-
+		debugger;
+		$("li").remove();
+    event.preventDefault();
+    var userInput = parseInt($("input#numberInput").val());
+    pingPong(userInput);
+		allNumbers.forEach(function(number) {
+			$("ul").append("<li>" + number + "</li>");
+			});
+    $(".results").show();
+		allNumbers = [];
   });
 });

@@ -8,36 +8,31 @@
 
 |Behavior|Input|Output|
 |--------:|-----|------|
-| 1. The program does not recognize characters that cannot be parsed, empty values | Input = word | Output = Please enter a number |
-| 2. The program can count up to a preset number and stop there. | Input = 2 | Output = 1,2 |
-| 3. The program will change multiples of 3 to "Ping". | Input = 6 | Output = "Ping!"|
-| 4. The program will change multiples of 5 to "Pong". | Input = 10 | Output = "Pong!"|
-| 5. The program will change multiples of 15 to "Ping-Pong!"| Input = 30 | Output = "Ping-Pong!"|
+| 1. The program can count up to a preset number and stop there. | Input = 2 | Output = [1,2] |
+| 2. Output can replace numbers divisible by 3 to "Ping". | Input = 3 | Output = [1,2,"Ping!"]|
+| 3. Output will replace numbers divisible by 5 to "Pong". | Input = 5 | Output = [1,2,"Ping!",4,"Pong!"]|
+| 4. Output will replace numbers divisible by 15 to "Ping-Pong!"| Input = 15 | Output = 1,2,"Ping",4,"Pong","Ping",7,8,"Ping","Pong",11,"Ping",13,14,"Ping-Pong!"|
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+If you would like to play with this code you are welcome to:
+1. Click the "clone/download" button on Github.
+2. Access with a simple code editor like Atom.
+    download: https://atom.io/
+3. You should be able to access the folder and bring up the index.html file in your browser of choice.
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+Have fun!
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Please contact me @ benschenkenberger@gmail.com if you have any questions.
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+This project incorporated HTML, CSS, and Javascript/JQuery.
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) GPL open source, 2017 **_Ben Schenkenberger_**
